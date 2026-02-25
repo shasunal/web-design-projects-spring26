@@ -1,0 +1,14 @@
+<html>
+    {% include "header.njk" %}
+    <body>
+<form method = 'POST' action = '/sign'>
+<input type = 'text' placeholder = 'sign your name' name = 'guest'>
+<input type = 'text' placeholder = 'write a message' name = "guestMessage">
+<input type = 'submit' value = 'sign my guestbook'>
+    </form>
+    {# nunjucks syntax, injecting data into client #}
+    {# safe processes html, unsafe displays it raw #}
+{{serverData | safe}}
+
+    </body>
+</html>
