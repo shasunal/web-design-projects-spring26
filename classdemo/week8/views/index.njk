@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Class 8</title>
+        {%include 'headers.njk'%}
+    </head>
+    <body>
+        this is my homepage{{SentData}}
+    {% for post in dataToBeSent%}
+
+    <div class = 'single-post'>
+        <span> {{post.date}}</span>
+       <a href = '/post/{{post._id}}'> <img src = '{{post.filepath}}'></a>
+        <p> {{post.dataCaption}} </p>
+        </div>
+    {%endfor%}
+    </body>
+</html>

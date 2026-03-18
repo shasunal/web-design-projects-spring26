@@ -1,0 +1,41 @@
+body{
+    background-color: blanchedalmond;
+    font-family: "Playfair Display", serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin-bottom: 50px;
+
+}
+
+nav > a:visited, nav>a{
+    color: black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.single-post{
+    width: 60%;
+    object-fit: cover;
+}
+
+.single-post >img{
+  width:20%;
+  object-fit: cover; 
+}
+
+.single-post>span{
+    display: block;
+    font-size: 12px;
+}
